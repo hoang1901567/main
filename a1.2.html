@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #c7254e;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Các thẻ trong HTML</h1>
+
+    <h2>HTML Basic</h2>
+    <p>Cấu trúc cơ bản của một tài liệu HTML bao gồm các thẻ <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, và thẻ <code>&lt;body&gt;</code> </p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>HTML Elements</h2>
+    <p>Các phần tử HTML là các khối xây dựng nên các trang HTML, được xác định bởi thẻ bắt đầu, nội dung và thẻ kết thúc.</p>
+    <pre><code>&lt;p&gt;This is an HTML element.&lt;/p&gt;</code></pre>
+
+    <h2>HTML Attributes</h2>
+    <p>Thuộc tính cung cấp thông tin bổ sung về các phần tử HTML và luôn được chỉ định trong thẻ bắt đầu.</p>
+    <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+    <h2>HTML Headings</h2>
+    <p>Tiêu đề HTML được định nghĩa bằng thẻ <code>&lt;h1&gt;</code> và <code>&lt;h6&gt;</code> , trong đó thẻ <code>&lt;h1&gt;</code> quan trọng nhất.</p>
+    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;</code></pre>
+
+    <h2>HTML Paragraphs</h2>
+    <p>Các đoạn văn được định nghĩa bằng thẻ <code>&lt;p&gt;</code> </p>
+    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>HTML Styles</h2>
+    <p>Kiểu HTML được sử dụng để thêm kiểu cho các thành phần, chẳng hạn như màu sắc, phông chữ và khoảng cách.</p>
+    <pre><code>&lt;p style="color:blue;"&gt;This is a styled paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>HTML Formatting</h2>
+    <p>Các thành phần định dạng bao gồm <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code>, và các thành phần khác để định dạng văn bản.</p>
+    <pre><code>&lt;b&gt;Bold Text&lt;/b&gt;, &lt;i&gt;Italic Text&lt;/i&gt;</code></pre>
+
+    <h2>HTML Quotations</h2>
+    <p>Trích dẫn trong HTML có thể được sử dụng <code>&lt;blockquote&gt;</code> cho trích dẫn khối và <code>&lt;q&gt;</code>trích dẫn nội tuyến.</p>
+    <pre><code>&lt;blockquote&gt;This is a block quote.&lt;/blockquote&gt;</code></pre>
+
+    <h2>HTML Comments</h2>
+    <p>Bình luận được thêm vào <code>&lt;!-- --&gt;</code> và không được hiển thị trên trình duyệt.</p>
+    <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+
+    <h2>HTML Colors</h2>
+    <p>Màu HTML có thể được áp dụng bằng cách sử dụng tên, mã hex, RGB hoặc các định dạng màu khác.</p>
+    <pre><code>&lt;p style="color:#ff6347;"&gt;This is a colored paragraph.&lt;/p&gt;</code></pre>
+
+    <h2>HTML Links</h2>
+    <p>Liên kết được tạo bằng thẻ <code>&lt;a&gt;</code>, xác định đích đến bằng <code>href</code> thuộc tính </p>
+    <pre><code>&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;</code></pre>
+
+    <h2>HTML Images</h2>
+    <p>Hình ảnh được những bằng thẻ <code>&lt;img&gt;</code> , với <code>src</code> thuộc tính chỉ rõ nguồn hình ảnh. </p>
+    <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+
+    <h2>HTML Tables</h2>
+    <p>Bảng được định nghĩa bằng thẻ <code>&lt;table&gt;</code> , sử dụng <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, và <code>&lt;td&gt;</code> cho các hàng và ô.</p>
+    <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+    <h2>HTML Lists</h2>
+    <p>Danh sách có thể được sắp xếp(<code>&lt;ol&gt;</code>) hoặc không có thứ tự (<code>&lt;ul&gt;</code>), với các mục danh sách được xác định bằng cách sử dụng  <code>&lt;li&gt;</code>.</p>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <h2>HTML Block & Inline</h2>
+    <p>Các phần tử HTML có thể là khối hoặc nội tuyến. Các phần tử khối (e.g., <code>&lt;div&gt;</code>) Các phần tử HTML có thể là khối hoặc nội tuyến. Các phần tử khối  (e.g., <code>&lt;span&gt;</code>) Các phần tử HTML có thể là khối hoặc nội tuyến. Các phần tử khối </p>
+    <pre><code>&lt;div&gt;This is a block element.&lt;/div&gt;
+&lt;span&gt;This is an inline element.&lt;/span&gt;</code></pre>
+
+</body>
+</html>
