@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.red-box {
+    background-color: red;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+.green-box {
+    background-color: green;
+}
+
+.item-list {
+    list-style-type: square;
+    color: blue;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.item-list li {
+    margin-bottom: 5px;
+}

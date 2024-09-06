@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  .image-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .image-container img {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .image-container img:hover {
+    opacity: 1;
+  }

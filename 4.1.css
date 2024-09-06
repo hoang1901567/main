@@ -1,0 +1,75 @@
+/* Nhúng font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Định dạng toàn bộ trang */
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Màu nền trang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.custom-h2 {
+    color: #ffffff; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu nền xanh */
+    padding: 5px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc nhẹ */
+    font-size: 15px; /* Kích thước chữ */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+/* Khung chứa nội dung chính */
+.container {
+    width: 560px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+/* Tiêu đề */
+.title {
+    color: rgb(19, 151, 151);
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+/* Khung chứa ảnh và chú thích */
+.content {
+    background-color: rgb(194, 186, 186);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Khung chứa ảnh */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ảnh */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* Chú thích ảnh */
+.caption {
+    color: rgb(66, 68, 189);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Liên kết khi hover */
+a {
+    text-decoration: none;
+    color: rgb(19, 151, 151);
+}
+
+a:hover {
+    color: rgb(228, 228, 19);
+}

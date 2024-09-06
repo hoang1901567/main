@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #8b8b8b;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+    }
+}
