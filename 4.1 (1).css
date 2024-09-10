@@ -1,0 +1,209 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Horizontal menu */
+.horizontal-menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-menu ul li {
+    float: left;
+}
+
+.horizontal-menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.horizontal-menu ul li a:hover {
+    background-color: #111;
+}
+
+/* Container for vertical menu and main content */
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Vertical menu */
+.vertical-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    overflow:scroll;
+    height: 410px;
+}
+
+.vertical-menu ul li {
+    margin-bottom: 10px;
+}
+
+.vertical-menu ul li {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #ddd;
+    width: 200px;       /* Đặt chiều rộng của nút */
+    height: 25px;
+}
+
+.vertical-menu ul li:hover {
+    background-color: #4CAF50;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    background-color: white;
+    flex-grow: 1;
+    overflow: scroll;
+    height: 410px;
+}
+.btn {
+    background-color: #4CAF50; /* Màu xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+    display: inline-block;
+    min-width: 100px; /* Đặt kích thước tối thiểu */
+    text-align: center; /* Căn giữa nội dung */
+    white-space: nowrap;
+}
+.button-container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Phân bố khoảng cách đều giữa các nút */
+    margin: 20px; /* Khoảng cách bên ngoài container */
+}
+
+.btn:hover {
+    background-color: #205622; 
+}
+.new-button {
+    background-color: #c7cdc7; /* Màu xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+    display: inline-block;
+    min-width: 100px; /* Đặt kích thước tối thiểu */
+    text-align: center; /* Căn giữa nội dung */
+    white-space: nowrap;
+}
+.new-container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Phân bố khoảng cách đều giữa các nút */
+    margin: 20px; /* Khoảng cách bên ngoài container */
+}
+
+/* Hiệu ứng hover cho nút mới */
+.new-button:hover {
+    background-color: #4CAF50;
+}
+.new1-button {
+    background-color: #3182c4; /* Màu xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+    display: inline-block;
+    min-width: 100px; /* Đặt kích thước tối thiểu */
+    text-align: center; /* Căn giữa nội dung */
+    white-space: nowrap;
+}
+.new1-container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Phân bố khoảng cách đều giữa các nút */
+    margin: 20px; /* Khoảng cách bên ngoài container */
+}
+
+/* Hiệu ứng hover cho nút mới */
+.new1-button:hover {
+    background-color: #7aa0e1;
+}
+.new2-button {
+    background-color: #cacaca; /* Màu xanh */
+    color: #000000; /* Màu chữ trắng */
+    width: 300px;       /* Đặt chiều rộng của nút */
+    height: 50px;
+    border: none; /* Không có viền */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+    display: inline-block;
+    min-width: 100px; /* Đặt kích thước tối thiểu */
+    text-align: center; /* Căn giữa nội dung */
+    white-space: nowrap;
+}
+.new2-container {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Phân bố khoảng cách đều giữa các nút */
+    margin: 20px; /* Khoảng cách bên ngoài container */
+}
+
+/* Hiệu ứng hover cho nút mới */
+.new2-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+
+}
+.box1 {
+    width: 700px;
+    background-color: rgb(212, 212, 210); 
+    padding: 20px 20px;
+    margin: 20px
+}
+
+.box2 {
+    width: 700px;
+    padding: 20px 20px;
+    background-color: rgb(178, 239, 205); /* Nền màu xanh nhạt */
+    margin: 20px
+}
+.box3 {
+    width: 700px;
+    padding: 20px 20px;
+    background-color: rgb(25, 5, 64); /* Nền màu xanh nhạt */
+    color: #ffffff;
+    margin: 20px
+}
