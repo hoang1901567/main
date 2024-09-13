@@ -1,0 +1,46 @@
+div{
+   background-color:pink;
+   color:rgb(71, 221, 71);
+   padding: 20px;
+   text-align: center;
+}
+
+style{ 
+   color:green;
+}
+
+style{
+   front-family:Arial,sans-serif;
+   front-size:18pt;
+   color:blue;
+}
+body{
+   background-color: azure;
+   color:#ff00d0;
+
+}
+ul {
+   list-style-type: none;
+   padding: 0;
+   color:blue;
+}
+
+li {
+   margin: 10px 0;
+   color:blue;
+}
+
+a {
+   color:green;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, sans-serif;
+   font-size: 14pt;
+}
+
+p {
+   font-style: italic;
+   color:#ff00d0;
+   font-family: Arial, sans-serif;
+   font-size: 14pt;
+}
