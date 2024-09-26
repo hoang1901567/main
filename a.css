@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: rgb(48, 5, 65);
+    color: rgb(159, 157, 157);
+    font-family: Arial, sans-serif;
+}
+
+.h1, h3{
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.lop1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.bo:hover .lop1 {
+    transform: scale(1.2);
+}
+
+.lop2 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.bo:hover .lop2 {
+    opacity: 0.4;
+}
+
+.lop3 {
+    position: absolute;
+    top: 50%; /* Đặt ở giữa theo chiều dọc */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đẩy phần tử về giữa */
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1; /* Đảm bảo lớp 3 nằm trên cùng */
+}
+
+.bo:hover .lop3 {
+    opacity: 1; /* Hiện lớp 3 khi hover */
+}

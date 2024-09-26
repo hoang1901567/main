@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: rgb(237, 236, 236);
+    
+}
+.header {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.header i {
+    margin-left: 10px; /* Khoảng cách giữa ảnh và biểu tượng */
+}
+
+.p{
+    font-size:300%;
+    font-family: Arial, sans-serif;
+}
+.menu {
+    background-color: rgb(237, 236, 236); /* Màu nền cho menu */
+    border-radius: 5px; /* Bo tròn viền */
+}
+
+.menu ul {
+    list-style-type: none; /* Loại bỏ dấu chấm */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Sử dụng flexbox để xếp ngang */
+}
+
+.menu li {
+   
+    position: relative; /* Để định vị cho pseudo-element */
+}
+
+.menu a {
+    display: block; /* Để kích thước đầy đủ */
+    padding: 10px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa văn bản */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.menu a::after {
+    content: '';
+    display: block;
+    height: 2px; /* Độ dày của gạch chân */
+    background-color: rgb(0, 0, 0); /* Màu gạch chân */
+    width: 0; /* Bắt đầu với chiều rộng 0 */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển động */
+    position: absolute;
+    bottom: 0; /* Đặt ở dưới cùng */
+    left: 50%; /* Đặt ở giữa */
+}
+
+.menu a:hover::after {
+    width: 100%; /* Mở rộng chiều rộng khi hover */
+    left: 0; /* Đẩy gạch chân sang bên trái */
+}
+.column {
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+}
+.container {
+    display: flex;
+}
+.bo {
+    position: relative; /* Để có thể sử dụng absolute cho các lớp khác */
+    width: auto; /* Chiều rộng tự động theo hình ảnh */
+    overflow: hidden; /* Để ẩn bất kỳ phần nào vượt ra ngoài */
+}
+
+.lop1 {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của .bo */
+    height: auto; /* Giữ tỉ lệ của hình ảnh */
+}
+.lop2 {
+    position: absolute; /* Để định vị chính xác */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    width: 90%; /* Chiều rộng nhỏ hơn */
+    height: 90%; /* Chiều cao nhỏ hơn */
+    background-color: rgb(255, 255, 255); /* Màu nền bán trong suốt */
+    transform: translate(-50%, -50%); /* Căn giữa chính xác */
+    opacity: 0; /* Ẩn lớp này ban đầu */
+    transition: opacity 0.3s; /* Hiệu ứng chuyển tiếp */
+    color:black;
+    display: flex; /* Sử dụng flexbox để căn giữa chữ */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+}
+
+.bo:hover .lop2 {
+    opacity: 0.8;
+}
+
+.lop3 {
+    position: absolute;
+    top: 50%; /* Đặt ở giữa theo chiều dọc */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đẩy phần tử về giữa */
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1; /* Đảm bảo lớp 3 nằm trên cùng */
+}
+
+.bo:hover .lop3 {
+    opacity: 1; /* Hiện lớp 3 khi hover */
+}

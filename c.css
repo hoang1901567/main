@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/701877/pexels-photo-701877.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Thay đổi với URL của hình ảnh bạn muốn */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Chiều cao của hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute; /* Định vị ở góc phải trên cùng */
+    top: 20px; /* Khoảng cách từ đầu trang */
+    right: 20px; /* Khoảng cách từ bên phải */
+    border-radius: 8px; /* Bo góc */
+    padding: 10px; /* Khoảng cách bên trong */
+}
+
+.navbar ul {
+    list-style: none; /* Xóa dấu chấm */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Sắp xếp theo hàng */
+}
+
+.navbar li {
+    margin: 0 15px; /* Khoảng cách giữa các mục */
+    position: relative; /* Để pseudo-element được căn chỉnh đúng */
+}
+
+.navbar a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: #ffffff; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+    padding: 5px 0; /* Khoảng cách cho gạch chân */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.navbar a::after {
+    content: ''; /* Tạo một pseudo-element */
+    position: absolute; /* Định vị tuyệt đối */
+    left: 50%; /* Căn giữa */
+    bottom: -2px; /* Đặt ở dưới cùng của chữ */
+    width: 0; /* Chiều rộng ban đầu là 0 */
+    height: 2px; /* Chiều cao của gạch chân */
+    background-color: #ffffff; /* Màu gạch chân */
+    transition: width 0.4s ease, left 0.4s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.navbar li:hover a::after {
+    width: 100%; /* Đặt chiều rộng khi hover */
+    left: 0; /* Định vị lại sang trái để tạo hiệu ứng gạch chân từ giữa sang 2 bên */
+}
+
+.content {
+    position: relative; /* Để nội dung hiển thị đúng */
+}
+.submenu {
+    display: none; /* Ẩn submenu ban đầu */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 100%; /* Đặt dưới mục cha */
+    left: 0; /* Căn trái */
+    background-color: #ffffff; /* Nền của submenu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    z-index: 1000; /* Đảm bảo nằm trên các thành phần khác */
+    opacity: 0;
+}
+
+.navbar li:hover .submenu {
+    display: block; /* Hiển thị submenu khi hover vào mục cha */
+    opacity: 10;
+}
+
+.submenu li {
+    width: 250px; /* Chiều rộng của submenu */
+}
+
+.submenu a {
+    padding: 10px 15px; /* Khoảng cách bên trong cho submenu */
+    color: rgb(0, 0, 0); /* Màu chữ của submenu */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.column {
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+}
+.container {
+    display: flex;
+}
+.bo {
+    position: relative; /* Để có thể sử dụng absolute cho các lớp khác */
+    width: auto; /* Chiều rộng tự động theo hình ảnh */
+    overflow: hidden; /* Để ẩn bất kỳ phần nào vượt ra ngoài */
+}
+
+.lop1 {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng của .bo */
+    height: auto; /* Giữ tỉ lệ của hình ảnh */
+}
+.lop2 {
+    
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.1s;
+
+}
+
+.bo:hover .lop2 {
+    opacity: 1;
+}
+
+.lop3 {
+    position: absolute;
+    top: 50%; /* Đặt ở giữa theo chiều dọc */
+    left: 50%; /* Đặt ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đẩy phần tử về giữa */
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1; /* Đảm bảo lớp 3 nằm trên cùng */
+}
+
+.bo:hover .lop3 {
+    opacity: 1; /* Hiện lớp 3 khi hover */
+}
